@@ -1,0 +1,3 @@
+[submodule "themes/plumage"]
+	path = themes/plumage
+	url = git@github.com:nchowning/plumage.git

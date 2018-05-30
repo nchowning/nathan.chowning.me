@@ -1,0 +1,65 @@
+Title: Telegram in irssi via bitlbee, libpurple, and telegram-purple
+Date: 2015-01-18 02:09:39
+Modified: 2015-01-18 02:09:39
+Category: Linux
+Tags: linux, telegram, irssi, bitlbee
+slug: telegram-in-irssi-via-bitlbee-libpurple-and-telegram-purple
+Authors: Nathan Chowning
+
+<p>I like using irssi inside of screen/tmux on a VPS. I've been using bitlbee with irssi to connect to AOL Instant Messenger, Yahoo Messenger, and Twitter for a few years now. It has been really nice to have all of my chat conversations & logs in a single place that is accessible from any computer. Recently I started using a new messenger called "<a href="https://telegram.org">Telegram</a>". While there has been some debate over exactly how "secure" its homegrown protocol (<a href="https://core.telegram.org/mtproto">MTProto</a>) is, there's no denying that it's a very streamlined messenger experience across all of the platforms. This post isn't about the pros/cons of Telegram.</p>
+
+<p>Naturally I wanted to get Telegram working inside of irssi. For this to work, we'll need a couple of things:
+<ul>
+<li><a href="https://github.com/vysheng/tg">tg - telegram-cli</a> & its dependencies</li>
+<li><a href="https://github.com/majn/telegram-purple">telegram-purple</a> & its dependencies</li>
+<li><a href="http://www.bitlbee.org/main.php/download.html">bitlbee source tarball</a></li>
+</ul></p>
+
+<h2>Setting up telegram-cli for authentication</h2>
+<p>tg (telegram-cli) is a functional CLI client for Telegram on its own. Unfortunately I didn't really care for it. We'll be setting it up primarily to create an "auth" file to be used with telegram-purple. First we'll clone the repo, install its dependencies, compile it, and run the binary. On a side-note, I'm running centos 7.</p>
+<div id="post-code-block">$ sudo yum install lua-devel openssl-devel libconfig-devel readline-devel libevent-devel
+$ git clone --recursive https://github.com/vysheng/tg.git && cd tg
+$ ./configure && make && bin/telegram-cli</div>
+
+<p>You should be prompted for your phone number. In the US, you'll want to put "+1" in front of your 10 digit phone number (without dashes). Proceed with the authentication and press ctrl+d to exit once you're logged in. If you have authenticated properly, you should now have a "~/.telegram-cli/auth" file. We'll need that for later.</p>
+
+<h2>Compiling telegram-purple</h2>
+<p>The <a href="https://github.com/majn/telegram-purple">telegram-purple</a> project is a plugin for libpurple. Now we'll need to compile it for use with bitlbee.</p>
+<div id="post-code-block">$ sudo yum install gcc openssl-devel glib2-devel libpurple-devel
+$ git clone --recursive https://github.com/majn/telegram-purple && cd telegram-purple
+$ ./configure && make</div>
+
+<h2>Compiling bitlbee with purple support</h2>
+<p>You can likely get bitlbee from a repo but in my experience, it's typically not compiled with purple support. This is the case with the version of bitlbee in EPEL for el6 and el7. We'll need to compile it on our own. For my install I'll be using gnutls and the default prefix of "/usr/local".</p>
+<div id="post-code-block">$ sudo yum install gnutls-devel libgcrypt-devel
+$ wget http://get.bitlbee.org/src/bitlbee-3.2.2.tar.gz
+$ tar -xzvf bitlbee-3.2.2.tar.gz && cd bitlbee-3.2.2/
+$ ./configure --purple=1 --ssl=gnutls && make
+$ sudo make install
+$ sudo make install-etc
+$ sudo make install-systemd</div>
+
+<p>I'm not going to go into the details of configuring bitlbee since that's a little out of scope. To use purple, you'll need to run bitlbee in ForkDaemon mode. You'll also want to make sure that you have "telegram" in the "Protocol" section of your bitlbee.conf (/usr/local/etc/bitlbee/bitlbee.conf if you're using the default prefix). Once you have your configuration all set, we'll fire up bitlbee.</p>
+<div id="post-code-block">$ systemctl start bitlbee
+$ systemctl enable bitlbee</div>
+
+<h2>Adding telegram account to bitlbee</h2>
+<p>I'm going to assume that you have or know how to create an account within bitlbee. If not, check out the help for "register", "identify", and "save". Fire up irssi, connect to bitlbee, and "identify" with your bitlbee account. Now we'll add a telegram account. I'm going to assume that your phone number is 555-555-5555 and that you're in the US (+1 country code).</p>
+<div id="post-code-block">[irssi] account add telegram +15555555555 anything-for-a-password
+[irssi] account telegram set nick_format %full_name
+[irssi] account telegram on</div>
+
+<p>You'll get a login code on Telegram and/or a text message with a login code... Unfortunately, there's not a good way to give that login code to bitlbee. We'll need to use the "auth" file that was generated via telegram-cli earlier.</p>
+<div id="post-code-block">[irssi] account telegram off
+
+$ cp ~/.telegram-cli/auth '/var/lib/bitlbee/.telegram-purple/+15555555555/auth'
+
+[irssi] account telegram on</div>
+
+<h2>Conclusion</h2>
+<p>At this point you should have a mostly functional setup with Telegram inside of irssi. There are a few problems with this setup that I've noticed thus far. For starters, if you are connected to Telegram via bitlbee, any messages will get marked as "read" as soon as they're received by telegram-purple. This ultimately means you will not be getting any notifications on your phone, tablet, or any other devices connected to Telegram. I haven't played around with this much yet so there chould be a way around this.</p>
+
+<p>Another problem is group messages. If you're already in group messages, there's not an easy way to open a window for those chats until someone says something in that chat. You could do this from another device... but that's annoying. In those group chats, there is an additional member named something like "_55555555" where the 5s are numbers. This user is also you... When you say something in the chat, your regular (bitlbee) user will echo your message along with the _55555555 user will too. You can get around that by doing something like:</p>
+<div id="post-code-block">[irssi] /ignore _55555555</div>
+
+<p>The last major problem that I've noticed is that your messages sent from other Telegram devices do not show up in the chat. Messages from your friends will show up, but your messages back to them will not. This could be a side-effect of ignoring your _55555555. I haven't done enough research to find a work-around yet</p>
