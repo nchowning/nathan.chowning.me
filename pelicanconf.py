@@ -4,10 +4,10 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Nathan Chowning'
 SITENAME = 'nathan.chowning.me'
-SITEURL = 'http://nathan.chowning.me'
+SITEURL = 'https://nathan.chowning.me'
 SITETITLE = 'Nathan Chowning'
 SITESUBTITLE = 'GNU/Linux System Administrator'
-SITE_THUMBNAIL = 'http://www.gravatar.com/avatar/0b008feb00337569fdf13cbc7edfbe81?s=200'
+SITE_THUMBNAIL = 'https://www.gravatar.com/avatar/0b008feb00337569fdf13cbc7edfbe81?s=200'  # noqa
 
 THEME = 'themes/plumage'
 DISPLAY_PAGES_ON_MENU = None
@@ -40,8 +40,8 @@ LINKS = ()
 
 # Social widget
 SOCIAL = (
-    ('twitter', 'http://twitter.com/nbchowning'),
-    ('github', 'http://github.com/nchowning'),
+    ('twitter', 'https://twitter.com/nbchowning'),
+    ('github', 'https://github.com/nchowning'),
 )
 DISQUS_SITENAME = 'yesimnathan'
 
