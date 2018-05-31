@@ -8,6 +8,8 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+DOCKER_REPO_NAME="yesimnathan/nathan.chowning.me"
+
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
@@ -37,6 +39,7 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	[ -e keybase.txt ] && cp keybase.txt $(OUTPUTDIR)/
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
@@ -58,7 +61,6 @@ else
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
 endif
 
-
 devserver:
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
@@ -73,4 +75,10 @@ stopserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-.PHONY: html help clean regenerate serve serve-global devserver stopserver publish
+build-container:
+	docker tag $(DOCKER_REPO_NAME):latest $(DOCKER_REPO_NAME):previous
+	docker build -t $(DOCKER_REPO_NAME):latest .
+	docker push $(DOCKER_REPO_NAME):previous
+	docker push $(DOCKER_REPO_NAME):latest
+
+.PHONY: html help clean regenerate serve serve-global devserver stopserver publish build-container

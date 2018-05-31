@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/yesimnathan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nathan.chowning.me
+  * I am yesimnathan (https://keybase.io/yesimnathan) on keybase.
+  * I have a public key with fingerprint 88E5 1E35 DE39 28E9 818E  4157 8A0B 0902 7561 E7FC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010119d7b79e5653427ae8a66b7ae83d71ab5aeef15bfacb43661abef5705ab8419d0a",
+            "fingerprint": "88e51e35de3928e9818e41578a0b09027561e7fc",
+            "host": "keybase.io",
+            "key_id": "8a0b09027561e7fc",
+            "kid": "010119d7b79e5653427ae8a66b7ae83d71ab5aeef15bfacb43661abef5705ab8419d0a",
+            "uid": "48175238065bc79578d66421b6bad819",
+            "username": "yesimnathan"
+        },
+        "service": {
+            "hostname": "nathan.chowning.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1487989397,
+    "expire_in": 157680000,
+    "prev": "cfe5cf34a7208642ce194f849b0fa69721c050a512614875e2fb4805ba78ac6b",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.64
+Comment: https://keybase.io/crypto
+
+yMIqAnicrVJbbA1BGD7VKg6NljgP6IOJW6SpnT07O7MnoUEQD7yo6EPjZGZ3tme1
+3T3O7jlU8UglNCo5xIlUXOJaIdQ9vaGJqLqkbokHFSFBaN3ikkbNVr15NC9/5v+/
+75vv/+e/mZcdCGYtWPyh59eF+/lZXR0HkoGys2/TtYA5Rg2I1IJKPhR4lcFdL1pp
+GSACJChBqBmYYY0jFYUVGVNOqKoyP4YNDClDlHMTImZSnSlhVRUpbiIsIcqIIsgS
+BUXAtOwKnognLNsTsoRwBHkYGTysyYRrBBKuQIQJlZikSTJGKuTY1AUx5rg+Q5hj
+1OXFliNy4hIdsvcP/H/2nRySUwjESA4TSUVMx5owaqiqIkOmMmoQqPlAlydsWs0F
+uoa7VrVNvRi1weYiIAopS+f+bP1mhkF/6sV6zFlvi9kUi2QRiCccz9GdKlGPeV48
+4tO9mriPX89ZdFgpyizbEBxBSPGEazk2iECB1D3Ll4YKwRrRwhouAnxD3ErwqOUj
+EFaJJI7/DE8JSd3kSDfDCsWyREQ7OoeaYhJFY5JJVQ3LUJeQRBGUVV8TcdlkCpEQ
+o+KjdJUBv7d1tgMimrBJK4Ska1WIxpIJDjZfby/PCWQFA7kjR/h7FgiOyf+7faXf
+Rw2Mr/ra6u4d6J61yi0MXelNLlp4LtM469mOwc6+9+fLJxZ0l5jJ+hmf5NDTNYem
+fvv4pHNa46vWgwv6UouObb+QnT0v5159uu3WmwdtsW7QoeRt2X/JO5Ss69kRwpvW
+6fTR7cy+3vzOwcJLs7cuK0zj6sNfTo9u6DqytmnmBtwcuXZiwqSNLYdT2p6lp/Pr
+Q+UFP3c11eW2p9njzMvJjUvGdp8cJKwkNKX5x1X5CJ79/PjRU/sH3brXOWPBqPlz
+S3dffJi7dHXzwIvag0tcPbuhJdN7Znlw58I7c549Kenf97nsRmZFf96UhsrMt/Ym
+b/z0cT13C+/I21a+C35+I13eYj9NV079DWkVSmw=
+=tqWC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yesimnathan
+
+==================================================================
