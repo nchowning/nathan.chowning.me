@@ -6,7 +6,7 @@ AUTHOR = 'Nathan Chowning'
 SITENAME = 'nathan.chowning.me'
 SITEURL = 'https://nathan.chowning.me'
 SITETITLE = 'Nathan Chowning'
-SITESUBTITLE = 'GNU/Linux System Administrator'
+SITESUBTITLE = 'GNU/Linux System Engineer'
 SITE_THUMBNAIL = 'https://www.gravatar.com/avatar/0b008feb00337569fdf13cbc7edfbe81?s=200'  # noqa
 
 THEME = 'themes/plumage'
