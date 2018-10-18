@@ -31,6 +31,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+HEADER_LINKS = (
+    ('authorization_endpoint', 'https://indieauth.com/auth'),
+    ('token_endpoint', 'https://tokens.indieauth.com/token'),
+    ('microsub', 'https://aperture.p3k.io/microsub/143'),
+    ('micropub', ''),
+)
+
 # Menu
 MENUITEMS = (
     ('Résumé', 'pages/resume.html'),
@@ -40,9 +47,12 @@ LINKS = ()
 
 # Social widget
 SOCIAL = (
-    ('twitter', 'https://twitter.com/nbchowning'),
+    ('email', 'mailto:nathan@chowning.me'),
     ('github', 'https://github.com/nchowning'),
+    ('twitter', 'https://twitter.com/nbchowning'),
+    ('youtube', 'https://www.youtube.com/channel/UC96H-DJgLzedz53KYSIutBw'),
 )
+INDIEAUTH = True
 DISQUS_SITENAME = 'yesimnathan'
 
 DEFAULT_PAGINATION = 5
