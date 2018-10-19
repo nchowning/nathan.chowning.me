@@ -49,8 +49,11 @@ LINKS = ()
 SOCIAL = (
     ('email', 'mailto:nathan@chowning.me'),
     ('github', 'https://github.com/nchowning'),
+    ('soundcloud', 'https://soundcloud.com/bosscillator'),
+    ('telegram', 'https://t.me/yesimnathan'),
+    ('twitch', 'https://twitch.tv/zashdance'),
     ('twitter', 'https://twitter.com/nbchowning'),
-    ('youtube', 'https://www.youtube.com/channel/UC96H-DJgLzedz53KYSIutBw'),
+    ('youtube', 'https://youtube.com/channel/UC96H-DJgLzedz53KYSIutBw'),
 )
 INDIEAUTH = True
 DISQUS_SITENAME = 'yesimnathan'
