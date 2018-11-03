@@ -39,9 +39,11 @@ HEADER_LINKS = (
 )
 
 # Menu
-MENUITEMS = (
-    ('Résumé', 'pages/resume.html'),
-)
+DISPLAY_PAGES_ON_MENU = True
+# MENUITEMS = (
+#     ('Projects', 'pages/projects.html'),
+#     ('Résumé', 'pages/resume.html'),
+# )
 # Blogroll
 LINKS = ()
 
