@@ -1,7 +1,7 @@
 title: Résumé
 slug: resume
 date: 2015-12-08 08:48:00
-modified: 2015-12-08 08:48:00
+modified: 2021-05-24 16:00:00
 
 # [Nathan Chowning](mailto:nathan@chowning.me)
 
@@ -33,16 +33,19 @@ GNU/Linux System Engineer
 
 *Feb 2016-Current*
 
+- Wrote automation to deploy & serve the first containerized application in our environment
+- Created ansible AWX automation to streamline a lot of processes including:
+  - Server builds, rebuilds, & upgrades
+  - Disk adding & growing
+  - Migrating apps
 - Wrote an internal python module for interacting with Red Hat Satellite 6
 - Created automation for content view promotions in Red Hat Satellite 6
 - Implemented infrastructure automation for Elixir applications in our environments
 - Added logic to F5 automation (in puppet) to support the addition of RHEL7 guests to our testing environment
-- Wrote automation to dynamically create StatusCake monitors for our external facing applications
-- Acted as "Product Owner" for the Production Operations team
 
 **Environment:**
 
-> GNU/Linux (RHEL), Red Hat Satellite, Puppet, Ansible, BIG-IP F5, Shinken (Nagios rewrite in Python), Apache, NFS, Redis, Jenkins, git, Python, Ruby
+> GNU/Linux (RHEL), Docker, Kubernetes, Red Hat Satellite, Puppet, Ansible, AWX/Tower, Terraform, BIG-IP F5, Shinken (Nagios rewrite in Python), Datadog, Apache, NFS, Redis, Jenkins, git, Python, Ruby
 
 ---
 
