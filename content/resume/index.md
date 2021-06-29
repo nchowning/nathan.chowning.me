@@ -32,14 +32,13 @@ GNU/Linux System Engineer
 
 *Feb 2016-Current*
 
-- Wrote automation to deploy & serve the first containerized application in our environment
-- Created ansible AWX automation to streamline a lot of processes including:
-  - Server builds, rebuilds, & upgrades
+- Wrote automation to build, deploy & serve the first container application in our environment
+- Created ansible AWX automation to streamline several repeatable processes including:
+  - Server builds, rebuilds & upgrades
   - Disk adding & growing
   - Migrating apps
 - Wrote an internal python module for interacting with Red Hat Satellite 6
-- Created automation for content view promotions in Red Hat Satellite 6
-- Implemented infrastructure automation for Elixir applications in our environments
+- Designed process and automation for "content view" promotions in Red Hat Satellite 6
 - Added logic to F5 automation (in puppet) to support the addition of RHEL7 guests to our testing environment
 
 **Environment:**
@@ -71,7 +70,7 @@ GNU/Linux System Engineer
 
 *May 2012-June 2013*
 
-- Designed, managed, and secured web infrastructure for Highlights and its child companies
+- Designed, managed and secured web infrastructure for Highlights and its child companies
 - Improved upon automation and monitoring practices for infrastructure
 - Created Puppet module to automate application firewalls across all servers
 - Researched and assisted in implementation of web-facing Single Sign-On solutions for Highlights branded sites
