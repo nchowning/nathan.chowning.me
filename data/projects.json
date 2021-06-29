@@ -1,6 +1,16 @@
 {
     "list": [
         {
+            "name": "MEGA Voltex",
+            "url": "https://github.com/nchowning/mega_voltex",
+            "desc": "Arduino Mega 2560 Sound Voltex controller shield for use with [ACreal_IO](https://github.com/Nadeflore/ACreal_IO)"
+        },
+        {
+            "name": "DK42",
+            "url": "https://cad.onshape.com/documents/75e87631304d16e07e5730a9/w/3ff3bc84a17caa59ee28e391/e/c333117fe1403b03b27aba20",
+            "desc": "Working 42%-scale Donkey Kong arcade bartop cabinet. Parts are designed to be 3D Printed."
+        },
+        {
             "name": "NES-101 Multi-out Panel",
             "url": "https://cad.onshape.com/documents/a2fe2880522041e385ba24cb/w/202e752ad9da1ecca9662020/e/60f76bfeadbd7d778f53841e",
             "desc": "3D printable replacement AV/Power panel for the NES-101 that includes a proprietary Nintendo multi-out port instead of regular holes for RF out and channel select"

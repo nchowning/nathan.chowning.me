@@ -25,9 +25,10 @@ Paginate = 5
   mainSectionTitle = "Blog Posts"
   postsOnHomePage = 5
   tagsOverview = false
-  showProjectsList = true
-  rss = true
 
+  showProjectsList = true
+
+  rss = true
 
 [params.comments]
   enabled = false
