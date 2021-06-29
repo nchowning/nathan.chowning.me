@@ -1,25 +1,25 @@
-FROM nginx:alpine
+FROM nginx:stable as builder
 
-ENV SRC_DIR=/app
-COPY . $SRC_DIR
+ENV APP_DIR /app
+ENV HUGO_VERSION 0.84.2
 
-RUN echo "#### Install necessary packages" && \
-    apk --no-cache add \
-        bash \
-        make \
-        python3 \
-        vim
+RUN apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get -y install \
+        git
 
-RUN echo "#### Install python packages" && \
-    pip3 install --upgrade pip && \
-    pip3 install -r $SRC_DIR/requirements.txt
+ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb /tmp/hugo.deb
+RUN dpkg -i /tmp/hugo.deb && \
+    rm /tmp/hugo.deb
 
-RUN echo "#### Building site" && \
-    cd $SRC_DIR && \
-    make html && \
-    mv $SRC_DIR/output/* /usr/share/nginx/html/
+COPY . ${APP_DIR}
 
-RUN echo "#### Cleanup..." && \
-    rm -rf /usr/lib/python3* && \
-    rm -rf $SRC_DIR && \
-    unset SRC_DIR
+RUN cd ${APP_DIR} && \
+    git submodule update --init --recursive
+
+RUN hugo -s ${APP_DIR} -d /output
+
+
+FROM nginx:stable
+
+COPY --from=builder /output /usr/share/nginx/html
