@@ -1,0 +1,46 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Nathan Chowning"
+theme = "cactus"
+Paginate = 5
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Resume"
+  url = "/resume/"
+  weight = 2
+
+[params]
+  author = "Nathan Chowning"
+  description = "Senior Linux System Engineer"
+  gravatar = "nathan@chowning.me"
+  copyright = "Nathan Chowning"
+
+  colortheme = "dark"
+  mainSection = "posts"
+  mainSectionTitle = "Blog Posts"
+  postsOnHomePage = 5
+  tagsOverview = false
+  showProjectsList = true
+  rss = true
+
+
+[params.comments]
+  enabled = false
+
+[[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/zashdance"
+[[params.social]]
+  name = "github"
+  link = "https://github.com/nchowning"
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/nchowning/"
+[[params.social]]
+  name = "email"
+  link = "nathan@chowning.me"

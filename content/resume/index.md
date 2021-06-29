@@ -1,11 +1,10 @@
-title: Résumé
-slug: resume
-date: 2015-12-08 08:48:00
-modified: 2021-05-24 16:00:00
+---
+title: Resume
+date: 2021-06-29T14:00:00Z
+draft: false
+---
 
-# [Nathan Chowning](mailto:nathan@chowning.me)
-
-### GNU/Linux System Engineer
+# [Nathan Chowning](mailto:nathan@chowning.me) - Senior Linux System Engineer
 
 ---
 
