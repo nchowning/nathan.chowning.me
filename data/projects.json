@@ -1,6 +1,16 @@
 {
     "list": [
         {
+            "name": "png2gb",
+            "url": "https://github.com/nchowning/png2gb",
+            "desc": "Script that converts a PNG into tiles and a tilemap to build a Game Boy rom that displays the image"
+        },
+        {
+            "name": "open-io",
+            "url": "https://github.com/nchowning/open-io",
+            "desc": "A drop-in replacement for the EXT-IO - a piece of Konami arcade hardware"
+        },
+        {
             "name": "MEGA Voltex",
             "url": "https://github.com/nchowning/mega_voltex",
             "desc": "Arduino Mega 2560 Sound Voltex controller shield for use with [ACreal_IO](https://github.com/Nadeflore/ACreal_IO)"
