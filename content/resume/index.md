@@ -5,9 +5,11 @@ draft: false
 ---
 
 # Contact
-email: nathan@chowning.me
-github: [nchowning](https://github.com/nchowning)
-linkedin: [nchowning](https://www.linkedin.com/in/nchowning)
+email: nathan@chowning.me | github: [nchowning](https://github.com/nchowning) | linkedin: [nchowning](https://www.linkedin.com/in/nchowning)
+
+# Skills
+
+Ansible | AWS | Kubernetes | Linux | Python | Terraform
 
 # Professional Experience
 
