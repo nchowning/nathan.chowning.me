@@ -9,7 +9,7 @@ email: nathan@chowning.me | github: [nchowning](https://github.com/nchowning) | 
 
 # Skills
 
-Ansible | AWS | Kubernetes | Linux | Python | Terraform
+Ansible | ArgoCD | AWS | Kubernetes | Linux | Python | Terraform
 
 # Professional Experience
 
