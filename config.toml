@@ -34,9 +34,6 @@ Paginate = 5
   enabled = false
 
 [[params.social]]
-  name = "twitter"
-  link = "https://twitter.com/zashdance"
-[[params.social]]
   name = "github"
   link = "https://github.com/nchowning"
 [[params.social]]
