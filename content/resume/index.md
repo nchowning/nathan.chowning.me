@@ -21,9 +21,7 @@ Ansible | ArgoCD | AWS | Kubernetes | Linux | Python | Terraform
 
 ## **eFuse** (System Engineer | *Mar 2022 - Oct 2022*)
 
-- Created & deployed automation to create and import Terraform resources for existing Cloudflare configuration which drastically reduced conversion time and resulted in improved efficiency and standardization for DNS Zone configuration.
-- Extended CMS to support additional AWS S3 functionality eliminating the need for a costly re-architecture of content delivery.
-- Redesigned Terraform automation for AWS EKS, reducing the deployment time & complexity of new Kubernetes cluster creation.
+- Created & deployed automation to import Terraform resources for existing Cloudflare configuration which drastically reduced conversion time and resulted in improved efficiency and standardization for DNS Zone configuration.
 - Automated deployment of Doppler Kubernetes Operator reducing the attack surface of apps by centralizing secrets into Kubernetes instead of individual containers.
 
 ## **Immuta** (System Engineer II | *Aug 2021 - Mar 2022*)
@@ -33,17 +31,14 @@ Ansible | ArgoCD | AWS | Kubernetes | Linux | Python | Terraform
 
 ## **CoverMyMeds** (Senior System Engineer | *Feb 2016 - Aug 2021*)
 
+- Spearheaded ongoing migration from on-prem platform to the cloud by designing Kubernetes testing environment.
 - Pioneered and championed container-based applications by designing process and automation for the first production Docker application. 95% of ~1000 production application servers are now running containerized apps.
 - Reduced process repetition and reduced risk of human errors by automating common complex tasks with Ansible and AWX.
-- Increased stability of operating system patching by automating promotion of patches through testing, integration and then production.
-- Eliminated tedious manual processes by creating internal python module to interact with Red Hat Satellite API.
-- Trained and mentored new engineers on the intricacies of our tooling and environment.
 
 ## **Nationwide Insurance** (Linux System Engineer | *June 2013 - Feb 2016*)
 
 - Improved server lifecycle management by redesigning Django web application using Django-Rest-Framework.
 - Standardized automated and manual interactions with lifecycle API by creating and deploying 'pycycle' python package across 3000+ servers.
-- Reduced complexity of storage activities by overhauling SAN abstraction python package.
 
 ## **Highlights for Children** (Linux System Engineer | *May 2012 - June 2013*)
 
