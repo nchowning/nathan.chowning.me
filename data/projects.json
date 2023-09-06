@@ -1,9 +1,9 @@
 {
     "list": [
         {
-            name: M8-template,
-            url: https://github.com/nchowning/M8-template,
-            desc: Documentation and Template for an M8 song save file
+            "name": "M8-template",
+            "url": "https://github.com/nchowning/M8-template",
+            "desc": "Documentation and Template for an M8 song save file"
         },
         {
             "name": "png2gb",
