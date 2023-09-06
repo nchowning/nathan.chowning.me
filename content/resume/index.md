@@ -13,11 +13,12 @@ Ansible | ArgoCD | AWS | Kubernetes | Linux | Python | Terraform
 
 # Professional Experience
 
-## **Loop** (Senior System Engineer | *Oct 2022 - Present*)
+## **Loop** (Senior DevOps Engineer | *Oct 2022 - Present*)
 
 - Researched and produced comprehensive documentation for various existing processes and components of infrastructure, promoting knowledge sharing and facilitating efficient maintenance.
 - Spearheaded the design of the EKS cluster bootstrap process, resulting in streamlined and efficient cluster creation.
-- Designed & implemented a flexible and highly scalable ArgoCD solution for continuus delivery of Kubernetes resources across multiple clusters, optimizing deployment processes and platform stability.
+- Designed & implemented a flexible and highly scalable ArgoCD solution for continuous delivery of Kubernetes resources across multiple clusters, optimizing deployment processes and platform stability.
+- Successfully led and executed the migration of on-premises Teleport infrastructure to Teleport Cloud, enhancing system scalability and reducing maintenance overhead.
 
 ## **eFuse** (System Engineer | *Mar 2022 - Oct 2022*)
 

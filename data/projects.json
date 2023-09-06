@@ -1,6 +1,11 @@
 {
     "list": [
         {
+            name: M8-template,
+            url: https://github.com/nchowning/M8-template,
+            desc: Documentation and Template for an M8 song save file
+        },
+        {
             "name": "png2gb",
             "url": "https://github.com/nchowning/png2gb",
             "desc": "Script that converts a PNG into tiles and a tilemap to build a Game Boy rom that displays the image"
