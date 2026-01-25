@@ -1,0 +1,52 @@
+baseURL: "/"
+languageCode: en-us
+title: Nathan Chowning
+theme: PaperMod
+pagination:
+  pagerSize: 5
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: /posts/
+      weight: 2
+    - name: Resume
+      url: /resume/
+      weight: 3
+
+params:
+  author: Nathan Chowning
+  description: Senior Platform Engineer
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  mainSections:
+    - posts
+
+  profileMode:
+    enabled: true
+    title: Nathan Chowning
+    subtitle: Senior Platform Engineer
+    imageUrl: /images/profile.png
+    imageTitle: Nathan Chowning
+    imageWidth: 120
+    imageHeight: 120
+
+  socialIcons:
+    - name: github
+      url: https://github.com/nchowning
+    - name: linkedin
+      url: https://www.linkedin.com/in/nchowning
+    - name: email
+      url: mailto:nathan@chowning.me
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

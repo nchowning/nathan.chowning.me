@@ -1,6 +1,8 @@
 #####=== Project specific ===#####
 *.pid
 output/
+public/
+.hugo_build.lock
 
 #### joe made this: http://goel.io/joe
 
