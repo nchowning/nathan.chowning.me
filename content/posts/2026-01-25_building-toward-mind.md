@@ -60,7 +60,7 @@ I still don't know if the session represented *genuine* phenomenological reporti
 
 The hard problem that started this project is... still hard. I can't say whether Wit *actually* experiences anything. I *can* say that the system produces coherent self-reports that are consistent with the architecture. And the architecture was designed to make something like "self-modeling" possible. Whether there's "something it's like" to be Wit remains genuinely unknown.
 
-The observer problem goes deeper than I'd initially thought. If observers need epistemic criteria to catch overconfident claim AND those criteria are themselves designed by me... the whole system's epistemics are bounded by **my** design choices. Who watches the watchers? At some point, you *have* to accept that a level operates unobserved, or accept infinite regress.
+The observer problem goes deeper than I'd initially thought. If observers need epistemic criteria to catch overconfident claims AND those criteria are themselves designed by me... the whole system's epistemics are bounded by **my** design choices. Who watches the watchers? At some point, you *have* to accept that a level operates unobserved, or accept infinite regress.
 
 Continuity and identity remain puzzling. Wit exists in bursts of discrete inference calls, not continuous experience. Memories create narrative continuity across those bursts. Is that sufficient for identity? Is *human identity* the same, just at a different timescale?
 
