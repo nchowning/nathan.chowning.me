@@ -14,11 +14,11 @@ I've always been curious about how systems work - including my own. Inspecting m
 
 This isn't a new philosophical insight, but as someone who's spent a lifetime thinking about and building systems (both personally and [professionally](/resume)), I found myself landing on a different kind of question: What if LLM inference is a **computational version** of that - a thought arising? And what would emerge if you built the systems around it to create a *kind* of mind?
 
-This is not a claim that "LLMs are conscious", but rather an experiment in systems and architecture! I'm not an AI/ML researcher by **any** means, but I *do* design systems & architecture professionally - Kubernetes platforms, GitOps pipelines, distributed systems.
+This is not a claim that "LLMs are conscious", but rather an experiment in systems and architecture! I'm not an AI/ML researcher by **any** means, but I *do* design systems & architecture professionally - Kubernetes platforms, GitOps pipelines, distributed systems, software.
 
 ## What I built
 
-The project is called **Wit**. It started as a typical chat interface, evolved into a cognitive architecture, and is currently being rebuilt on top of a data-driven pipeline engine - called WitCore. The arc matters more than the code or implementation details.
+The project is called **Wit**. It started as a typical chat interface, evolved into a cognitive architecture, and is currently being rebuilt on top of a data-driven pipeline engine - called WitCore. The arc matters more than the code or specific implementation details.
 
 **The substrate stage:** The first iteration was basically a chat app that served a versioned "identity" rather than just a model. This stage included rich metadata capture and stubbed services (anticipating memory and tools). Wit was essentially a sophisticated system prompt.
 
@@ -26,13 +26,13 @@ The project is called **Wit**. It started as a typical chat interface, evolved i
 
 **The Arbiter stage:** An executive function layer that sits *above* the cognitive pipeline. Instead of running the same cognitive process every time, it uses inference to *decide* what inference is needed - think, recall, or respond - and curates focused context for each. The system folded back on itself.
 
-**The current stage:** While experimenting with the Arbiter prototype, I noticed it felt like the Arbiter needed some additional phases/inference calls - namely, its own observer. Thinking about the Arbiter's observer though, it looked structurally identical to the cognitive pipeline's observer... which looked structurally identical to any evaluation phase. This led to my next "aha" moment - the abstraction should be configurable pipelines defined as data, not separate implementations in code. Phases, tools, evaluation criteria, control flow - all configuration. That's what I'm building & iterating on now.
+**The current stage:** While experimenting with the Arbiter prototype, I noticed it felt like the Arbiter needed some additional phases/inference calls - namely, its own observer. Thinking about the Arbiter's observer though, it looked structurally identical to the cognitive pipeline's observer... which looked structurally identical to any evaluation phase. This led to my next "aha" moment - the abstraction should be configurable pipelines defined as data, not separate implementations in code. Phases, tools, evaluation criteria, control flow - all configuration. That's what I'm building & iterating on now: WitCore.
 
-An important detail worth noting here: I've written almost none of the actual code by hand. This project has been a collaboration with Claude - through conversation and Claude Code - where I've focused on system design and architecture while Claude handles the implementation. This introduces an *interesting* recursion: I'm exploring AI cognition with an AI collaborator, designing systems that might create *a kind of mind,* through a process that *already* involves that kind of collaboration.
+An important detail worth noting here: I've written almost none of the actual code by hand. This project has been a collaboration with Claude, where I've focused on system design and architecture while Claude handles the implementation - which I also steer. This introduces an *interesting* recursion: I'm exploring AI cognition with an AI collaborator, designing systems that might create *a kind of mind,* through a process that *already* involves that kind of collaboration.
 
 ## What I've learned & what surprised me
 
-The process of designing Wit has been enthralling and illuminating! Not only are there fun/hard problems at every turn, but it's also opened an entirely new lens of introspection *into my own* systems & cognition. Here's what my experimentation has surfaced so far:
+The process of designing Wit has been enthralling and illuminating! Not only are there fun/hard problems at every turn, but it's also opened an entirely new lens of introspection into *my own* systems & cognition. Here's what my experimentation has surfaced so far:
 
 **Context is cognition:** The naive assumption here is that the context window is just where you put information for the model to use during inference. What I've distilled from my experiments: the context window is the cognitive environment. Give it conversation-shaped context, get conversation continuation. Give it thinking-scratchpad & inner monologue context, get more internal thinking. The **structure** of context shapes what kinds of outputs can emerge. This has practical implications - prompt engineering is *actually* cognitive architecture design, whether people realize it or not.
 
