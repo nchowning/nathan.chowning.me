@@ -70,4 +70,4 @@ I'm not claiming to have built conscious AI or even solved *any* of the hard pro
 
 Building Wit has been my way of taking questions about AI consciousness and model welfare seriously - not as a researcher with access to model internals, but as an infrastructure engineer applying systems thinking to a genuinely difficult problem.
 
-The project isn't finished and the questions remain unanswered, but the exploration has been worth it and I'm excited to see what I learn next.
+The project isn't finished and the questions remain unanswered, but the exploration has been worth it and I'm excited to see what I learn next!
