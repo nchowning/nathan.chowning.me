@@ -37,7 +37,7 @@ Designed GitOps deployment architecture for KaaR (Kubernetes as a Runtime), Auto
 - Led GitOps adoption initiative, transitioning teams from imperative pipeline deployments to declarative workflows. Reduced configuration drift to near-zero and established golden paths for consistent deployments.
 - **Platform stack:** EKS, ArgoCD, Helm, Kustomize, Karpenter, External Secrets Operator, Istio, Terraform, Harness
 
-### **Loop** (Senior DevOps Engineer | *Oct 2022 - Present*)
+### **Loop** (Senior DevOps Engineer | *Oct 2022 - Apr 2024*)
 
 - Automated EKS cluster bootstrap process, reducing cluster provisioning from multi-day manual effort to under 1 hour. Enabled rapid environment teardown and recreation across dev, stage, and production environments.
 - Architected ArgoCD-based continuous delivery platform supporting 3 clusters with 20+ daily deployments, improving deployment consistency and reducing release friction.
